@@ -1,4 +1,8 @@
 /** @type {import('tailwindcss').Config} */
+import daisyui from "daisyui";
+import flowbite from "flowbite/plugin";
+import aspectRatio from "@tailwindcss/aspect-ratio";
+
 export default {
   content: [
     "./index.html",
@@ -26,8 +30,8 @@ export default {
     },
   },
   plugins: [
-    require("daisyui"),
-    require("flowbite/plugin"),
-    require("@tailwindcss/aspect-ratio"),
+    daisyui,
+    flowbite,
+    aspectRatio,
   ],
 };
