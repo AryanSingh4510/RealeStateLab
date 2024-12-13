@@ -6,7 +6,7 @@ const HomePage = () => {
   useEffect(() => {
     const fetchDefaultProperties = async () => {
       try {
-        const response = await fetch("/api/v1/property/default");
+        const response = await fetch("https://realestatelab.onrender.com/api/v1/property/default");
         const data = await response.json();
         setProperties(data);
       } catch (error) {
