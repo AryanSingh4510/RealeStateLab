@@ -305,6 +305,9 @@ minPrice (optional): Minimum price filter.
 
 maxPrice (optional): Maximum price filter.
 
+![Screenshot 2024-12-13 194204](https://github.com/user-attachments/assets/d4baffa0-2f7b-4b3a-b9e9-0fad967d9484)
+
+
 Response:
 
 [
