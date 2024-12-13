@@ -23,39 +23,6 @@ Ensure you have the following installed on your system:
 
 ---
 
-## Installation
-
-1. **Clone the Repository**:
-   ```bash
-   git clone <repository-url>
-   cd <project-folder>
-   ```
-
-2. **Install Dependencies**:
-   ```bash
-   npm install
-   ```
-
-3. **Set Up Environment Variables**:
-   Create a `.env` file in the root directory with the following variables:
-   ```env
-   JWT_SECRET=your_jwt_secret
-   mailHost=your_mail_host
-   mailPort=your_mail_port
-   emailUser=your_email_username
-   emailPassword=your_email_password
-   ```
-
-4. **Run the Application**:
-   ```bash
-   npm start
-   ```
-
-5. **Access the Application**:
-   Open `http://localhost:5000` in your browser.
-
----
-
 ## API Endpoints
 
 ### Authentication Routes
