@@ -1,4 +1,5 @@
 import React from "react";
+import defaultImage from "../../assets/Banner3.jpg";
 
 const PropertyCard = ({ property }) => {
   return (
@@ -6,27 +7,27 @@ const PropertyCard = ({ property }) => {
       {/* Image Section */}
       <div className="rounded-xl overflow-hidden aspect-w-3 aspect-h-2">
         <img
-          src={`/images/${property.images[0]}`}
-          alt={property.title}
-          className="w-full h-full object-cover text-green"
+          src={property.images && defaultImage}
+          alt={property.title || "Default Property"}
+          className="w-full h-full object-cover"
         />
       </div>
 
       {/* Title Section */}
-      <h1 className="text-2xl md:text-3xl font-medium mt-3 text-green-600 text-green">
+      <h1 className="text-2xl md:text-3xl font-medium mt-3 text-green-600">
         {property.title}
       </h1>
 
       {/* Description Section */}
-      <p className="text-black-500 text-lg mt-3">{property.description}</p>
+      <p className="text-gray-500 text-lg mt-3">{property.description}</p>
 
       {/* Property Details */}
-      <p className="text-black-500 mt-2">
+      <p className="text-gray-500 mt-2">
         {property.type} • {property.bedrooms} Bedrooms
       </p>
 
       {/* Price Section */}
-      <p className="font-bold text-lg mt-2 text-green">
+      <p className="font-bold text-lg mt-2 text-green-600">
         ${property.price.toLocaleString()}
       </p>
     </div>
