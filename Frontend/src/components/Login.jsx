@@ -28,7 +28,7 @@ const Login = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const res = await axios.post("https://reale-state-lab.vercel.app/api/v1/auth/login", {
+      const res = await axios.post("https://realestatelab.onrender.com/api/v1/auth/login", {
         email,
         password,
       });
