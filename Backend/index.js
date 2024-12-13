@@ -22,7 +22,7 @@ const app = express();
 
 app.use(
   cors({
-    origin: "*",
+    origin: "https://reale-state-lab.vercel.app",
     methods: ["POST", "GET", "PUT"],
     credentials: true,
   })
